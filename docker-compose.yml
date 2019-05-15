@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  nodek8s:
+    image: nodek8s
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
